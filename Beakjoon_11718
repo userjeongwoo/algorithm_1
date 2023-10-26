@@ -1,0 +1,24 @@
+package Baekjoon;
+
+import java.util.Scanner;
+
+public class Test_11718 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String str="";
+//		while(true) {
+		while(sc.hasNextLine()) {
+//			hasNextLine()은 Scanner 클래스의 메서드로, 
+//			boolean ( true or false ) 자료를 반환합니다.
+//			더 입력받을 줄이 있으면 true, 더 입력받을 줄이 없으면 
+//			false를 반환합니다. 즉, 위 코드의 8행의 while(true)
+//			를 while(sc.hasNextLine())으로 바꿔야 하겠군요. 
+//			바꿔 보면 다음과 같습니다.
+			String a=sc.nextLine();
+			if(a==str)
+				break;
+			System.out.println(a);
+		}
+	}
+
+}
