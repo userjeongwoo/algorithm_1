@@ -1,0 +1,26 @@
+package Baekjoon;
+
+import java.util.Scanner;
+
+public class Test_3003 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int K=1;
+		int Q=1;
+		int L=2;
+		int B=2;
+		int N=2;
+		int P=8;
+		
+		K=K-sc.nextInt();
+		Q=Q-sc.nextInt();
+		L=L-sc.nextInt();
+		B=B-sc.nextInt();
+		N=N-sc.nextInt();
+		P=P-sc.nextInt();
+		
+		System.out.println(K+" "+Q+" "+L
+				+" "+B+" "+N+" "+P);
+			}
+
+}
