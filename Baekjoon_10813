@@ -1,0 +1,34 @@
+package Baekjoon;
+import java.util.Scanner;
+
+public class Test_10813 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N,M;
+		N=sc.nextInt(); //N번째까지의 바구니
+		int[] arr=new int[N]; //N의 배열 생성 N개의 바구니 생성
+		M=sc.nextInt(); //M번 공을 바꾼다 
+		for(int u=0;u<arr.length;u++) {	//각바구니에 1,2,3,4,5넣기
+			arr[u]=u+1;
+		}
+			for(int o=0;o<M;o++) {
+				int i,j;
+				int k=0; // 두 변수의 값 바꾸기 위한 임시의 값 저장을 위한 변수
+				i=sc.nextInt(); 
+				j=sc.nextInt();
+				k=arr[j-1]; //arr[j-1]값을 k에 저장
+				arr[j-1]=arr[i-1];//arr[i-1]값을 arr[j-1]값에 저장
+				arr[i-1]=k;//k에 저장된 값을 arr[i-1]에 저장
+			
+		}
+		
+		
+		
+		for(int i=0;i<arr.length;i++) {
+			System.out.print(arr[i]+" ");
+		}
+	}
+
+}
+	
+
