@@ -1,0 +1,22 @@
+package Baekjoon;
+
+import java.util.Scanner;
+
+public class Test_10988 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String st=sc.nextLine(); // 문장 받고
+		String st_1="";
+		int a=0;
+		for(int i=st.length()-1;i>=0;i--) {
+			st_1=st_1+st.charAt(i);
+		}
+		if(st.equals(st_1)) {
+			System.out.println(1);
+		}
+		else {
+			System.out.println(0);
+		}
+		
+	}
+}
