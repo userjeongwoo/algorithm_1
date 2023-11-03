@@ -9,36 +9,35 @@ public class Test_2738 {
 		int M=sc.nextInt();
 		int arr [][] =new int[N][M];
 		int arr_1 [][]=new int[N][M];
-		int a[][]=new int[N][M];
+		
 
 		
-		for (int i=0;i<arr.length;i++) {
-			for (int j=0;j<arr[i].length;j++) {
+		for (int i=0;i<N;i++) {
+			for (int j=0;j<M;j++) {
 				arr[i][j]=sc.nextInt();
 			}
 		}
-		for(int i=0;i<arr_1.length;i++) {
-			for (int j=0;j<arr_1[i].length;j++) {
+		for(int i=0;i<N;i++) {
+			for (int j=0;j<M;j++) {
 				arr_1[i][j]=sc.nextInt();
 			}
 				
 		}
-		for(int i=0;i<arr.length;i++) {
-			for (int j=0;j<arr.length;j++) {
-				a[i][j]=arr[i][j]+arr_1[i][j];
-				
+		for(int i=0;i<N;i++) {
+			for (int j=0;j<M;j++) {
+				System.out.print(arr[i][j]+arr_1[i][j]+" ");
 			}
-				
+				System.out.println();
 		}
-		for(int i=0;i<a.length;i++) {
-			for (int j=0;j<arr.length;j++) {
-				System.out.print(a[i][j]+" ");
-				
-			}
-			System.out.println();
-		
-	}
-		System.out.println();
+//		for(int i=0;i<a.length;i++) {
+//			for (int j=0;j<arr.length;j++) {
+//				System.out.print(a[i][j]+" ");
+//				
+//			}
+//			System.out.println();
+//		
+//	}
+//		System.out.println();
 
 }
 }
