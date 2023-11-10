@@ -1,0 +1,26 @@
+package Baekjoon;
+
+import java.util.Scanner;
+/* 1.문자열을 받았으면 예를 들어서"ljes=njak" 이렇게 받으면
+ * "ljes=njak"이거의 길이는 9줄인데 크로아티아로 보면
+ * "lj", "s=", "nj" 이거는 1개로 봐야 되서 이 문자들을 1개의
+ * 문자로 바꿔준다. ex) lj > 1, s= > 1, nj > 1
+ * 그 다음에 그 받은 문자열을 다시 length로 출력한다.
+ * 
+ */
+public class Test_2941 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String arr[]={"c=","c-","dz=",
+				"d-","lj","nj","s=","z="};
+		String text=sc.nextLine();
+		for(int i=0;i<arr.length;i++) {
+			if(text.contains(arr[i])) {
+				text=text.replace(arr[i],"1");
+			}
+		}
+		
+		System.out.println(text.length());
+			}
+
+}
