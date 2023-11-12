@@ -1,0 +1,31 @@
+package Baekjoon;
+
+import java.util.Scanner;
+
+public class Test_2563 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int arr[][]=new int[100][100];
+		int p=sc.nextInt();
+		int a=0;
+		int P=p*100;
+		int x, y;
+		for(int i=0;i<p;i++) {
+			x=sc.nextInt();
+			y=sc.nextInt();
+			for(int j=0;j<10;j++) {
+				for(int k=0;k<10;k++) {
+					arr[x+j][y+k]+=1;
+					if(arr[x+j][y+k]>1) {
+						arr[x+j][y+k]=1;
+						a+=arr[x+j][y+k];
+					}
+					
+				}
+			}
+				
+		}
+		System.out.println(P-a);
+
+}
+}
